@@ -14,11 +14,7 @@ const Navbar = () => {
     <nav className="bg-black sticky top-0 z-[20]">
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <Logo />
-            </div>
-          </div>
+          <Logo />
           {/* Nav Link */}
           <div className="hidden lg:block">
             <div className="ml-4 flex items-center space-x-4">

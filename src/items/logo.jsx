@@ -2,16 +2,15 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap",
   weight: "700",
 });
 
 const Logo = () => {
   return (
-    <div className={inter.className}>
-      <h1 className="text-white">
+    <div style={{ fontSize: "23px" }} className={`${inter.className}`}>
+      <h1 className="text-white text-[30px] font-bold">
         VerlinoFajri
-        <span className={`${inter.className} text-customOrange`}>.</span>
+        <span style={{ color: "#D46868" }}>.</span>
       </h1>
     </div>
   );

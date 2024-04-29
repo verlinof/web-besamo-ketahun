@@ -7,10 +7,6 @@
   display: none; /* Untuk Chrome, Safari, dan Opera */
 }
 
-/* Untuk Firefox */
-/* scrollbar-width: thin;
-scrollbar-color: transparent transparent; Warna kursor scroll saat tidak dihover */
-
 /* Desain scrollbar kustom */
 ::-webkit-scrollbar {
   width: 8px; /* Lebar scrollbar */
