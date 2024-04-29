@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
 /* Hapus scrollbar default */
 ::-webkit-scrollbar {
   display: none; /* Untuk Chrome, Safari, dan Opera */
