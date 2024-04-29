@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hapus scrollbar default */
+::-webkit-scrollbar {
+  display: none; /* Untuk Chrome, Safari, dan Opera */
+}
+
+/* Untuk Firefox */
+/* scrollbar-width: thin;
+scrollbar-color: transparent transparent; Warna kursor scroll saat tidak dihover */
+
+/* Desain scrollbar kustom */
+::-webkit-scrollbar {
+  width: 8px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna cursor scrollbar */
+  border-radius: 10px; /* Bentuk cursor */
+}
+
+/* Efek hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Warna cursor saat dihover */
+}
