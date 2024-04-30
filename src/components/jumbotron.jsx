@@ -41,10 +41,10 @@ const Jumbotron = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="2500"
-            className={`${urbanist.className} font-semibold text-white mt-8 mx-auto hover:rotate-45`}
+            className={`${urbanist.className} font-semibold text-white mt-8 mx-auto`}
           >
             <a
-              href="https://wa.me/6285703218543"
+              href="mailto:verlinorayafajri@mail.ugm.ac.id"
               className="lg:py-[11px] lg:px-[32px] md:py-[8px] md:px-[20px] py-[5px] px-[10px] lg:text-[16px] text-xs border rounded-full hover:bg-white hover:text-black transition-all"
             >
               Say hi 👋
