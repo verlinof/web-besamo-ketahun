@@ -6,12 +6,6 @@ import { Urbanist } from "next/font/google";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-const urbanist = Urbanist({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["200", "400", "700"],
-});
-
 const About = () => {
   return (
     <>
@@ -20,7 +14,7 @@ const About = () => {
         className="w-full overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div
-          className={`${urbanist.className} w-full flex items-center justify-between mt-[70px] mb-[50px]`}
+          className={`w-full flex items-center justify-between mt-[70px] mb-[50px]`}
         >
           <div className="text-gray-400">
             <p>About me</p>
@@ -34,18 +28,17 @@ const About = () => {
           className="flex flex-wrap items-center justify-center"
         >
           <div>
-            <p
-              className={`${urbanist.className} text-white md:text-[30px] text-[20px]`}
-            >
+            <p className={`text-white md:text-[30px] text-[20px]`}>
               Hi, I am Verlino! I`m a Backend Engineer with 2 years of web
               development experience with the past 2 years spent honing my
-              skills in Laravel, Node js, Golang, and Optimizations.
+              skills in <span className="font-bold">Laravel</span>,
+              <span className="font-bold"> Node js</span>,
+              <span className="font-bold">Golang</span>, and{" "}
+              <span className="font-bold">Optimizations</span>.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 my-11">
-            <p
-              className={`${urbanist.className} text-white md:text-[30px] text-[20px] col-span-2`}
-            >
+            <p className={`text-white md:text-[30px] text-[20px] col-span-2`}>
               I understand the importance of a Fast, Optimal, and Reliable
               system, pride myself on producing high-quality websites, and I`m
               comfortable working solo or as part of a team.
@@ -63,19 +56,14 @@ const About = () => {
       {/* Tech Stack */}
       <div className="w-full flex justify-center my-7">
         <Marquee pauseOnHover={true} gradient={false}>
-          <div className="border border-gray-500 grid grid-cols-1 cursor-pointer grayscale hover:grayscale-0 text-gray-500 hover:text-white font-bold transition-all">
-            <div className="mx-auto text-center px-[140px] py-[40px]">
-              <img src="/tech/laravel-icon.png" alt={`Laravel Icon`} />
-              <p className={`${urbanist.className} text-lg pt-3`}>Laravel</p>
-            </div>
-          </div>
-
-          {/* <Tech technology="Node Js" image="/tech/node-icon.png" />
+          <Tech technology="Laravel" image="/tech/laravel-icon.png" />
+          <Tech technology="Golang" image="/tech/golang-icon.png" />
+          <Tech technology="Node Js" image="/tech/node-icon.png" />
           <Tech technology="Next Js" image="/tech/nextjs-icon.png" />
           <Tech technology="React Js" image="/tech/reactjs-icon.png" />
           <Tech technology="Kotlin" image="/tech/kotlin-icon.png" />
           <Tech technology="Tailwind" image="/tech/tailwind-icon.png" />
-          <Tech technology="Java" image="/tech/java-icon.png" /> */}
+          <Tech technology="Java" image="/tech/java-icon.png" />
         </Marquee>
       </div>
     </>

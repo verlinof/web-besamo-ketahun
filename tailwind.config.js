@@ -14,6 +14,9 @@ module.exports = {
       },
       colors: {
         'custom-orange': "#D46868",
+      },
+      fontFamily: {
+        urbanist: ["Urbanist", "sans-serif"]
       }
     },
   },
