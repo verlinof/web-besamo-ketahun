@@ -34,18 +34,20 @@ const About = () => {
           className="flex flex-wrap items-center justify-center"
         >
           <div>
-            <p className={`${urbanist.className} text-white text-[30px]`}>
-              Hi, I am Verlino! I'm a Backend Engineer with 2 years of web
+            <p
+              className={`${urbanist.className} text-white md:text-[30px] text-[20px]`}
+            >
+              Hi, I am Verlino! I`m a Backend Engineer with 2 years of web
               development experience with the past 2 years spent honing my
               skills in Laravel, Node js, Golang, and Optimizations.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 my-11">
             <p
-              className={`${urbanist.className} text-white text-[30px] col-span-2`}
+              className={`${urbanist.className} text-white md:text-[30px] text-[20px] col-span-2`}
             >
               I understand the importance of a Fast, Optimal, and Reliable
-              system, pride myself on producing high-quality websites, and I'm
+              system, pride myself on producing high-quality websites, and I`m
               comfortable working solo or as part of a team.
             </p>
             <Image
@@ -61,14 +63,19 @@ const About = () => {
       {/* Tech Stack */}
       <div className="w-full flex justify-center my-7">
         <Marquee pauseOnHover={true} gradient={false}>
-          <Tech technology="Laravel" image="/tech/laravel-icon.png" />
-          <Tech technology="Golang" image="/tech/golang-icon.png" />
-          <Tech technology="Node Js" image="/tech/node-icon.png" />
+          <div className="border border-gray-500 grid grid-cols-1 cursor-pointer grayscale hover:grayscale-0 text-gray-500 hover:text-white font-bold transition-all">
+            <div className="mx-auto text-center px-[140px] py-[40px]">
+              <img src="/tech/laravel-icon.png" alt={`Laravel Icon`} />
+              <p className={`${urbanist.className} text-lg pt-3`}>Laravel</p>
+            </div>
+          </div>
+
+          {/* <Tech technology="Node Js" image="/tech/node-icon.png" />
           <Tech technology="Next Js" image="/tech/nextjs-icon.png" />
           <Tech technology="React Js" image="/tech/reactjs-icon.png" />
           <Tech technology="Kotlin" image="/tech/kotlin-icon.png" />
           <Tech technology="Tailwind" image="/tech/tailwind-icon.png" />
-          <Tech technology="Java" image="/tech/java-icon.png" />
+          <Tech technology="Java" image="/tech/java-icon.png" /> */}
         </Marquee>
       </div>
     </>

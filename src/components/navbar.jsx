@@ -2,6 +2,7 @@
 import Logo from "@/items/logo";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isClick, setIsClick] = useState(false);
@@ -18,24 +19,24 @@ const Navbar = () => {
           {/* Nav Link */}
           <div className="hidden lg:block">
             <div className="ml-4 flex items-center space-x-4">
-              <a
+              <Link
                 href="/"
                 className="text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/"
                 className="text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out"
               >
                 Projects
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/"
                 className="text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out"
               >
                 Process
-              </a>
+              </Link>
             </div>
           </div>
           {/* Responsive Toggle */}
@@ -69,24 +70,24 @@ const Navbar = () => {
       {isClick && (
         <div className="lg:hidden z-20">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
+            <Link
               href="/"
               className="text-white block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="text-white block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out"
             >
               Projects
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="text-white block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out"
             >
               Process
-            </a>
+            </Link>
           </div>
         </div>
       )}

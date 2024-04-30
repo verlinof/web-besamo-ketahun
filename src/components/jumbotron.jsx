@@ -13,18 +13,18 @@ const Jumbotron = () => {
     <>
       <div className="w-full flex items-center justify-center mx-auto lg:mt-[175px] lg:mb-[100px] md:my-[60px] my-[30px]">
         <div className="text-gray-500 text-center">
-          <h175
+          <h1
             data-aos="fade-up"
             data-aos-duration="1000"
-            className={`${urbanist.className} lg:text-[70px] md:text-[50px] sm:text-[30px]`}
+            className={`${urbanist.className} lg:text-[70px] md:text-[50px] text-[30px]`}
           >
-            I'm Verlino Raya {""}
+            I`m Verlino Raya {""}
             <span className="text-white font-bold">Fajri,</span>
-          </h175>
+          </h1>
           <h1
             data-aos="fade-up"
             data-aos-duration="2000"
-            className={`${urbanist.className} lg:text-[70px] md:text-[50px] sm:text-[30px]`}
+            className={`${urbanist.className} lg:text-[70px] md:text-[50px] text-[30px]`}
           >
             Backend {""}
             <span className="text-white font-bold">
