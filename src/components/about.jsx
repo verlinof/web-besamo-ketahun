@@ -15,12 +15,9 @@ const TechItem = ({ technology, image }) => {
 
 const About = () => {
   return (
-    <>
-      <div
-        id="about"
-        className="w-full overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-      >
-        <div className="w-full flex items-center justify-between mt-[70px] mb-[50px]">
+    <div id="about" className="w-full">
+      <div className="w-full overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full flex items-center justify-between my-[50px]">
           <div className="text-gray-400">
             <p>About me</p>
           </div>
@@ -50,6 +47,7 @@ const About = () => {
             </p>
             <div className="grayscale hover:grayscale-0 transition-all duration-500 delay-100 cursor-pointer">
               <Image
+                className="mt-4 md:mt-0"
                 src="/profile-picture.png"
                 width={390}
                 height={390}
@@ -72,7 +70,7 @@ const About = () => {
           <TechItem technology="Java" image="/tech/java-icon.png" />
         </Marquee>
       </div>
-    </>
+    </div>
   );
 };
 

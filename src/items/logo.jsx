@@ -9,11 +9,11 @@ const inter = Inter({
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <div className={`${inter.className} text-[23pxs]`}>
-        <h1 className="text-white text-[30px] font-bold">
+      <div className={`${inter.className} text-[27px] lg:text-[30px]`}>
+        <p className="text-white font-bold">
           VerlinoFajri
           <span style={{ color: "#D46868" }}>.</span>
-        </h1>
+        </p>
       </div>
     </Link>
   );
