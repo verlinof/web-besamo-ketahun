@@ -5,9 +5,9 @@ import Marquee from "react-fast-marquee";
 const TechItem = ({ technology, image }) => {
   return (
     <div className="border border-gray-500 cursor-pointer grayscale hover:grayscale-0 text-gray-500 hover:text-white font-bold transition-all">
-      <div className="mx-auto text-center px-[140px] py-[40px]">
-        <img src={image} alt={`${technology} Icon`} />
-        <p className="font-urbanist text-lg pt-3">{technology}</p>
+      <div className="text-center px-[140px] py-[10px] lg:px-[180px] lg:py-[30px]">
+        <Image width={100} height={75} src={image} alt={`${technology} Icon`} />
+        <p className="text-xl font-normal pt-3">{technology}</p>
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ const About = () => {
       </div>
       {/* Tech Stack */}
       <div className="w-full flex justify-center my-7">
-        <Marquee pauseOnHover={true} gradient={false}>
+        <Marquee speed={100} pauseOnHover={true} gradient={false}>
           <TechItem technology="Laravel" image="/tech/laravel-icon.png" />
           <TechItem technology="Golang" image="/tech/golang-icon.png" />
           <TechItem technology="Node Js" image="/tech/node-icon.png" />
