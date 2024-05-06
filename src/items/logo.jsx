@@ -1,18 +1,13 @@
 import { Inter } from "next/font/google";
 import Link from "next/link";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: "700",
-});
-
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <div className={`${inter.className} text-[27px] lg:text-[30px]`}>
-        <p className="text-white font-bold">
+      <div className={`font-inter`}>
+        <p className="text-white font-bold text-[20px] lg:text-3xl">
           VerlinoFajri
-          <span style={{ color: "#D46868" }}>.</span>
+          <span className="text-custom-orange">.</span>
         </p>
       </div>
     </Link>

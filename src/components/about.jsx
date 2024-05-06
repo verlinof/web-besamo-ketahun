@@ -45,9 +45,9 @@ const About = () => {
               system, pride myself on producing high-quality websites, and I`m
               comfortable working solo or as part of a team.
             </p>
-            <div className="grayscale hover:grayscale-0 transition-all duration-500 delay-100 cursor-pointer">
+            <div className="mt-4 md:mt-0">
               <Image
-                className="mt-4 md:mt-0"
+                className="grayscale hover:grayscale-0 transition-all duration-500 delay-100 cursor-pointer"
                 src="/profile-picture.png"
                 width={390}
                 height={390}
@@ -58,13 +58,28 @@ const About = () => {
         </div>
       </div>
       {/* Tech Stack */}
+      <p className="text-white font-semibold md:text-[30px] text-[20px] text-center">
+        Tech Stack
+      </p>
       <div className="w-full flex justify-center my-7">
-        <Marquee speed={100} pauseOnHover={true} gradient={false}>
+        <Marquee speed={150} pauseOnHover={true} gradient={false}>
           <TechItem technology="Laravel" image="/tech/laravel-icon.png" />
-          <TechItem technology="Golang" image="/tech/golang-icon.png" />
           <TechItem technology="Node Js" image="/tech/node-icon.png" />
           <TechItem technology="Next Js" image="/tech/nextjs-icon.png" />
           <TechItem technology="React Js" image="/tech/reactjs-icon.png" />
+          <TechItem technology="Gin Go" image="/tech/gin-icon.png" />
+        </Marquee>
+      </div>
+      <div className="w-full flex justify-center my-7">
+        <Marquee
+          speed={150}
+          pauseOnHover={true}
+          gradient={false}
+          direction="rtl"
+        >
+          <TechItem technology="MySQL" image="/tech/mysql-icon.png" />
+          <TechItem technology="Firebase" image="/tech/firebase-icon.png" />
+          <TechItem technology="Golang" image="/tech/golang-icon.png" />
           <TechItem technology="Kotlin" image="/tech/kotlin-icon.png" />
           <TechItem technology="Tailwind" image="/tech/tailwind-icon.png" />
           <TechItem technology="Java" image="/tech/java-icon.png" />

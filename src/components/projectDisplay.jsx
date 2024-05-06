@@ -1,3 +1,5 @@
+import CardProject from "@/items/cardProject";
+
 const ProjectDisplay = (props) => {
   const { title, description } = props;
 
@@ -8,8 +10,9 @@ const ProjectDisplay = (props) => {
         <p className="text-[20px] md:text-[30px] lg:text-[38px] w-full lg:w-[811px]">
           {description}
         </p>
-        <div className="my-[50px]">
-          <hr className="border-gray-500" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5 my-[50px]">
+          <CardProject />
+          <CardProject />
         </div>
       </div>
     </>
