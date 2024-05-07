@@ -25,14 +25,14 @@ const CardProject = (props) => {
         </div>
         <div className="p-[20px]">
           <div className="flex flex-wrap items-center justify-between">
-            <div className="rounded-3xl py-[10px] px-[35px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[10px] md:text-sm xl:text-md cursor-default hidden xl:block">
+            <div className="rounded-3xl py-[10px] px-[30px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[12px] md:text-sm xl:text-md cursor-default hidden xl:block">
               {role}
             </div>
-            <div className="rounded-3xl py-[10px] px-[35px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[10px] md:text-sm xl:text-md cursor-default">
+            <div className="rounded-3xl py-[10px] px-[30px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[12px] md:text-sm xl:text-md cursor-default">
               {tools}
             </div>
             <a href={links} target="_blank">
-              <div className="rounded-3xl py-[10px] px-[35px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[10px] md:text-sm xl:text-md">
+              <div className="rounded-3xl py-[10px] px-[30px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[12px] md:text-sm xl:text-md">
                 Details
               </div>
             </a>

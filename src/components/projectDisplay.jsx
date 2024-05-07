@@ -34,6 +34,30 @@ const ProjectDisplay = (props) => {
             tools="Express JS & Socket IO"
             links="https://github.com/verlinof/webchat-express-websocket"
           />
+          <CardProject
+            image="/projects/bromo.png"
+            title="Bromo (Broiler Monitoring)"
+            description="Bromo is a mobile application that is used as a 
+            monitoring tool for broiler cages. This application has several 
+            platforms, so to combine them using APIs made using Laravel and 
+            Kotlin for the Mobile app."
+            aos_duration="1500"
+            role="Fullstack"
+            tools="Kotlin & Laravel"
+            links="https://github.com/askar-ef/Broiler-Monitoring"
+          />
+          <CardProject
+            image="/projects/softlancer.png"
+            title="Bromo (Broiler Monitoring)"
+            description="Bromo is a mobile application that is used as a 
+            monitoring tool for broiler cages. This application has several 
+            platforms, so to combine them using APIs made using Laravel and 
+            Kotlin for the Mobile app."
+            aos_duration="1500"
+            role="Fullstack"
+            tools="Kotlin & Laravel"
+            links="https://github.com/askar-ef/Broiler-Monitoring"
+          />
         </div>
       </div>
     </>
