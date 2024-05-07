@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <Link href={"/"}>
       <div className={`font-inter`}>
-        <p className="text-white font-bold text-[20px] lg:text-3xl">
+        <p className="text-white font-bold text-[20px] lg:text-2xl">
           VerlinoFajri
           <span className="text-custom-orange">.</span>
         </p>

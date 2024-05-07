@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       colors: {
         'custom-orange': "#D46868",
+        'card-background': '#080808',
+        'main-gray': "#484E53",
+        'secondary-gray': '#A9A9A9'
       },
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],

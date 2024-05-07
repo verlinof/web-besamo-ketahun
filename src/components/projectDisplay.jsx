@@ -11,8 +11,28 @@ const ProjectDisplay = (props) => {
           {description}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5 my-[50px]">
-          <CardProject />
-          <CardProject />
+          <CardProject
+            image="/projects/kubuku.png"
+            title="Kubuku"
+            description="This application is a book e-commerce, where users can borrow books
+            through this application. This application uses Firebase as the main
+            database and also as Authorization."
+            aos_duration="1500"
+            role="Backend"
+            tools="Kotlin & Firebase"
+            links="https://github.com/verlinof/KuBuku"
+          />
+          <CardProject
+            image="/projects/kubuku.png"
+            title="Kubuku"
+            description="This application is a book e-commerce, where users can borrow books
+            through this application. This application uses Firebase as the main
+            database and also as Authorization."
+            aos_duration="3000"
+            role="Backend"
+            tools="Kotlin & Firebase"
+            links="https://github.com/verlinof/KuBuku"
+          />
         </div>
       </div>
     </>

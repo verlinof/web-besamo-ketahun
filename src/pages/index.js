@@ -5,7 +5,7 @@ import ProjectDisplay from "@/components/projectDisplay";
 
 export default function Home() {
   return (
-    <div className="font-urbanist">
+    <div className="font-urbanist bg-black">
       <Navbar />
       <Jumbotron />
       <About />
