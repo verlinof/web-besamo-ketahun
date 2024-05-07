@@ -10,7 +10,7 @@ const ProjectDisplay = (props) => {
         <p className="text-[20px] md:text-[30px] lg:text-[38px] w-full lg:w-[811px]">
           {description}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5 my-[50px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-5 my-[50px]">
           <CardProject
             image="/projects/kubuku.png"
             title="Kubuku"
@@ -23,15 +23,16 @@ const ProjectDisplay = (props) => {
             links="https://github.com/verlinof/KuBuku"
           />
           <CardProject
-            image="/projects/kubuku.png"
-            title="Kubuku"
-            description="This application is a book e-commerce, where users can borrow books
-            through this application. This application uses Firebase as the main
-            database and also as Authorization."
+            image="/projects/webchat.png"
+            title="Webchat (Express, Socket IO)"
+            description="Webchat is an application that has the main feature to chat in public with
+            other people, the server will send chat data in real time and also read the number of 
+            users who are currently active on the website. This website uses Express and Socket 
+            IO for the backend, and HTML CSS for the page display."
             aos_duration="3000"
-            role="Backend"
-            tools="Kotlin & Firebase"
-            links="https://github.com/verlinof/KuBuku"
+            role="Fullstack"
+            tools="Express JS & Socket IO"
+            links="https://github.com/verlinof/webchat-express-websocket"
           />
         </div>
       </div>
