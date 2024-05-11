@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const CardProject = (props) => {
   const { image, title, description, aos_duration, role, tools, links } = props;
@@ -31,11 +32,11 @@ const CardProject = (props) => {
             <div className="rounded-3xl py-[10px] px-[30px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[12px] md:text-sm xl:text-md cursor-default">
               {tools}
             </div>
-            <a href={links} target="_blank">
+            <Link href={links} target="_blank">
               <div className="rounded-3xl py-[10px] px-[30px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-[12px] md:text-sm xl:text-md">
                 Details
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

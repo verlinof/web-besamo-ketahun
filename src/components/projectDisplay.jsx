@@ -1,8 +1,8 @@
 import CardProject from "@/items/cardProject";
+import Image from "next/image";
+import Link from "next/link";
 
-const ProjectDisplay = (props) => {
-  const { title, description } = props;
-
+const ProjectDisplay = ({ title, description, children }) => {
   return (
     <>
       <div className="w-full overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-[60px] text-white">
@@ -11,55 +11,24 @@ const ProjectDisplay = (props) => {
           {description}
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-5 my-[50px]">
-          <CardProject
-            image="/projects/kubuku.png"
-            title="Kubuku"
-            description="This application is a book e-commerce, where users can borrow books
-            through this application. This application uses Firebase as the main
-            database and also as Authorization."
-            aos_duration="1500"
-            role="Backend"
-            tools="Kotlin & Firebase"
-            links="https://github.com/verlinof/KuBuku"
-          />
-          <CardProject
-            image="/projects/webchat.png"
-            title="Webchat (Express, Socket IO)"
-            description="Webchat is an application that has the main feature to chat in public with
-            other people, the server will send chat data in real time and also read the number of 
-            users who are currently active on the website. This website uses Express and Socket 
-            IO for the backend, and HTML CSS for the page display."
-            aos_duration="3000"
-            role="Fullstack"
-            tools="Express JS & Socket IO"
-            links="https://github.com/verlinof/webchat-express-websocket"
-          />
-          <CardProject
-            image="/projects/bromo.png"
-            title="Bromo (Broiler Monitoring)"
-            description="Bromo is a mobile application that is used as a 
-            monitoring tool for broiler cages. This application has several 
-            platforms, so to combine them using APIs made using Laravel and 
-            Kotlin for the Mobile app."
-            aos_duration="1500"
-            role="Fullstack"
-            tools="Kotlin & Laravel"
-            links="https://github.com/askar-ef/Broiler-Monitoring"
-          />
-          <CardProject
-            image="/projects/softlancer.png"
-            title="Bromo (Broiler Monitoring)"
-            description="Bromo is a mobile application that is used as a 
-            monitoring tool for broiler cages. This application has several 
-            platforms, so to combine them using APIs made using Laravel and 
-            Kotlin for the Mobile app."
-            aos_duration="1500"
-            role="Fullstack"
-            tools="Kotlin & Laravel"
-            links="https://github.com/askar-ef/Broiler-Monitoring"
-          />
+          {children}
+        </div>
+        <div className="w-full flex justify-center">
+          <Link href={"/"} className="text-white font-semibold">
+            <div className="rounded-3xl flex items-center py-[10px] px-[35px] border border-main-gray hover:border-black hover:bg-white text-secondary-gray font-medium hover:text-black hover:font-semibold transition-all ease-in-out duration-300 text-sm lg:text-md xl:text-lg">
+              <p>See all projects</p> &nbsp;&nbsp;
+              <Image
+                src={"/arrow_up.svg"}
+                width={20}
+                height={20}
+                alt={"See all projects"}
+              />
+            </div>
+          </Link>
         </div>
       </div>
+      {/* Divider */}
+      <hr className="border border-gray-700 mt-[40px]" />
     </>
   );
 };
