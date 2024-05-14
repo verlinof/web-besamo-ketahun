@@ -2,6 +2,7 @@ import About from "@/components/about";
 import Jumbotron from "@/components/jumbotron";
 import Navbar from "@/components/navbar";
 import ProjectDisplay from "@/components/projectDisplay";
+import SkillScope from "@/components/skillScope";
 import CardProject from "@/items/cardProject";
 
 export default function Home() {
@@ -61,6 +62,7 @@ export default function Home() {
           links="https://github.com/verlinof/Softlancer"
         />
       </ProjectDisplay>
+      <SkillScope />
     </div>
   );
 }

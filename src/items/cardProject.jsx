@@ -4,7 +4,7 @@ import Link from "next/link";
 const CardProject = (props) => {
   const { image, title, description, aos_duration, role, tools, links } = props;
   return (
-    <div className="w-full hover:-translate-y-1 cursor-pointer transition-all ease-in-out duration-300">
+    <div className="w-full hover:-translate-y-1 transition-all ease-in-out duration-300">
       <div
         data-aos="fade-up"
         data-aos-duration={aos_duration}
