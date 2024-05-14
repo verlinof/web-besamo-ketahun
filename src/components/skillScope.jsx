@@ -26,12 +26,29 @@ const SkillScope = () => {
             database management."
           />
           <CardSkillScope
-            icon="/skill-scope/backend_icon.svg"
-            title="Back End"
-            description="I specialize in crafting efficient systems to power applications. Skills include 
-            RESTful API creation, authorization, middleware integration, job 
-            management, email notification, WebSocket, SQL and NoSQL 
-            database management."
+            icon="/skill-scope/system_design_icon.svg"
+            title="System Design"
+            description="I specialize in designing robust systems for 
+            applications, focusing on architecture design, technology awareness, 
+            algorithm optimization, and business alignment. My skills include 
+            creating scalable architectures, leveraging cutting-edge 
+            technologies, and integrating business requirements seamlessly."
+          />
+          <CardSkillScope
+            icon="/skill-scope/software_research_icon.svg"
+            title="Software Research"
+            description="I specialize in design thinking and requirement 
+            analysis to craft effective solutions. My expertise includes 
+            selecting the right tech stack, creating detailed diagrams, and 
+            mapping out app flow to ensure seamless functionality and user experience."
+          />
+          <CardSkillScope
+            icon="/skill-scope/mobile_icon.svg"
+            title="Mobile Development"
+            description="I excel in utilizing Fetch API and the MVVM 
+            architecture to build dynamic applications. My skills also include 
+            creating responsive layouts and proficient debugging to ensure 
+            smooth and efficient performance."
           />
         </div>
       </div>
