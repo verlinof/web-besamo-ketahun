@@ -1,4 +1,5 @@
 import CardSkillScope from "@/items/cardSkillScope";
+import Image from "next/image";
 
 const SkillScope = () => {
   return (
@@ -51,6 +52,15 @@ const SkillScope = () => {
             smooth and efficient performance."
           />
         </div>
+        <Image
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          src={"/testing.svg"}
+          className={`w-full `}
+          width={0}
+          height={0}
+          alt="testing"
+        />
       </div>
     </>
   );
