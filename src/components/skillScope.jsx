@@ -54,9 +54,9 @@ const SkillScope = () => {
         </div>
         <Image
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="1500"
           src={"/testing.svg"}
-          className={`w-full `}
+          className={`w-full hidden md:block`}
           width={0}
           height={0}
           alt="testing"

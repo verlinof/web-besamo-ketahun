@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Footer from "@/components/footer";
 import Jumbotron from "@/components/jumbotron";
 import Navbar from "@/components/navbar";
 import ProjectDisplay from "@/components/projectDisplay";
@@ -64,6 +65,7 @@ export default function Home() {
         />
       </ProjectDisplay>
       <SkillScope />
+      <Footer />
     </div>
   );
 }
