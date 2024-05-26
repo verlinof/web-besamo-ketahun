@@ -15,7 +15,7 @@ const Footer = () => {
             Let`s <br /> Work Together -
           </p>
           <Link href={"mailto:verlinofajri.work@gmail.com"} passHref={true}>
-            <div className="border border-secondary-gray h-20 rounded-2xl p-4 flex items-center justify-between hover:bg-white hover:text-black transition-all ease-in-out duration-50000">
+            <div className="border border-secondary-gray h-20 rounded-2xl p-4 flex items-center justify-around md:justify-between hover:bg-white hover:text-black transition-all ease-in-out duration-50000">
               <Image
                 className="stroke-black"
                 src={"/gmail_icon.svg"}
@@ -23,7 +23,7 @@ const Footer = () => {
                 height={40}
                 alt={"Gmail"}
               />
-              <p className="text-[20px] md:text-[22px] lg:text-[20px] xl:text-[25px]">
+              <p className="text-[18px] md:text-[22px] lg:text-[19px] xl:text-[25px]">
                 verlinofajri.work@gmail.com
               </p>
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <hr className="border border-gray-700 mt-[40px]" />
       <div className="w-full flex justify-between items-center overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[30px] text-secondary-gray">
-        <p>© 2024 Verlino Raya Fajri</p>
+        <p>© 2024 VerlinoFajri</p>
         <SocialMedia />
       </div>
     </>

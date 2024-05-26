@@ -5,12 +5,11 @@ import Navbar from "@/components/navbar";
 import ProjectDisplay from "@/components/projectDisplay";
 import SkillScope from "@/components/skillScope";
 import CardProject from "@/items/cardProject";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="font-urbanist bg-black">
-      <Navbar />
+      <Navbar active="home" />
       <Jumbotron />
       <About />
       <ProjectDisplay title="Featured Projects" description="I craft digital solutions that showcase my passion and expertise in

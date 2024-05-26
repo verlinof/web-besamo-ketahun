@@ -1,10 +1,10 @@
 "use client";
 import Logo from "@/items/logo";
-import { useState } from "react";
+import { act, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ active }) => {
   const [isClick, setIsClick] = useState(false);
 
   const toggleNavbar = () => {
@@ -21,19 +21,25 @@ const Navbar = () => {
             <div className="ml-4 flex items-center space-x-4">
               <Link
                 href="/"
-                className="text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out"
+                className={`${
+                  active === "home" ? "bg-white text-black" : ""
+                } text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
                 Home
               </Link>
               <Link
                 href="/"
-                className="text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out"
+                className={`${
+                  active === "projects" ? "bg-white text-black" : ""
+                } text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
                 Projects
               </Link>
               <Link
                 href="/"
-                className="text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out"
+                className={`${
+                  active === "process" ? "bg-white text-black" : ""
+                } text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
                 Process
               </Link>
@@ -67,30 +73,38 @@ const Navbar = () => {
         </div>
       </div>
       {/* Responsive Menu */}
-      {isClick && (
-        <div className="lg:hidden z-20">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-              href="/"
-              className="text-white block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out"
-            >
-              Home
-            </Link>
-            <Link
-              href="/"
-              className="text-white block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out"
-            >
-              Projects
-            </Link>
-            <Link
-              href="/"
-              className="text-white block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out"
-            >
-              Process
-            </Link>
-          </div>
+      <div
+        className={`lg:hidden absolute top-16 w-full z-30 bg-black transition-max-height duration-1000 ease-in-out overflow-hidden ${
+          isClick ? "max-h-screen" : "max-h-0"
+        }`}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <Link
+            href="/"
+            className={`${
+              active === "home" ? "bg-white text-black" : "text-white"
+            } block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out`}
+          >
+            Home
+          </Link>
+          <Link
+            href="/projects"
+            className={`${
+              active === "projects" ? "bg-white text-black" : "text-white"
+            } block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out`}
+          >
+            Projects
+          </Link>
+          <Link
+            href="/process"
+            className={`${
+              active === "process" ? "bg-white text-black" : "text-white"
+            } block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out`}
+          >
+            Process
+          </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
