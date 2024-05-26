@@ -22,24 +22,30 @@ const Navbar = ({ active }) => {
               <Link
                 href="/"
                 className={`${
-                  active === "home" ? "bg-white text-black" : ""
-                } text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
+                  active === "home"
+                    ? "bg-white text-black"
+                    : "text-white hover:bg-white hover:text-black"
+                } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
                 Home
               </Link>
               <Link
                 href="/"
                 className={`${
-                  active === "projects" ? "bg-white text-black" : ""
-                } text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
+                  active === "projects"
+                    ? "bg-white text-black"
+                    : "text-white hover:bg-white hover:text-black"
+                } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
                 Projects
               </Link>
               <Link
                 href="/"
                 className={`${
-                  active === "process" ? "bg-white text-black" : ""
-                } text-white hover:bg-white hover:text-black rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
+                  active === "process"
+                    ? "bg-white text-black"
+                    : "text-white hover:bg-white hover:text-black"
+                } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
                 Process
               </Link>
@@ -82,24 +88,30 @@ const Navbar = ({ active }) => {
           <Link
             href="/"
             className={`${
-              active === "home" ? "bg-white text-black" : "text-white"
-            } block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out`}
+              active === "home"
+                ? "bg-white text-black"
+                : "text-white hover:bg-white hover:text-black"
+            } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
             Home
           </Link>
           <Link
             href="/projects"
             className={`${
-              active === "projects" ? "bg-white text-black" : "text-white"
-            } block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out`}
+              active === "projects"
+                ? "bg-white text-black"
+                : "text-white hover:bg-white hover:text-black"
+            } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
             Projects
           </Link>
           <Link
             href="/process"
             className={`${
-              active === "process" ? "bg-white text-black" : "text-white"
-            } block text-center hover:bg-white hover:text-black rounded-lg p-2 transition duration-150 ease-in-out`}
+              active === "process"
+                ? "bg-white text-black"
+                : "text-white hover:bg-white hover:text-black"
+            } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
             Process
           </Link>
