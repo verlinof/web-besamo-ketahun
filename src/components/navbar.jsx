@@ -30,7 +30,7 @@ const Navbar = ({ active }) => {
                 Home
               </Link>
               <Link
-                href="/"
+                href="/projects"
                 className={`${
                   active === "projects"
                     ? "bg-white text-black"
