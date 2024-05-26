@@ -5,6 +5,8 @@ import Navbar from "@/components/navbar";
 import ProjectDisplay from "@/components/projectDisplay";
 import SkillScope from "@/components/skillScope";
 import CardProject from "@/items/cardProject";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (

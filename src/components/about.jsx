@@ -68,6 +68,7 @@ const About = () => {
           <TechItem technology="Next Js" image="/tech/nextjs-icon.png" />
           <TechItem technology="React Js" image="/tech/reactjs-icon.png" />
           <TechItem technology="Gin Go" image="/tech/gin-icon.png" />
+          <TechItem technology="Tailwind" image="/tech/tailwind-icon.png" />
         </Marquee>
       </div>
       <div className="w-full flex justify-center my-7">
@@ -81,7 +82,7 @@ const About = () => {
           <TechItem technology="Firebase" image="/tech/firebase-icon.png" />
           <TechItem technology="Golang" image="/tech/golang-icon.png" />
           <TechItem technology="Kotlin" image="/tech/kotlin-icon.png" />
-          <TechItem technology="Tailwind" image="/tech/tailwind-icon.png" />
+          <TechItem technology="JavaScript" image="/tech/js-icon.png" />
           <TechItem technology="Java" image="/tech/java-icon.png" />
         </Marquee>
       </div>

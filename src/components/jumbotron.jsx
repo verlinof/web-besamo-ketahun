@@ -45,12 +45,12 @@ const Jumbotron = () => {
             data-aos-duration="2500"
             className="font-semibold text-white mt-8 mx-auto"
           >
-            <a
-              href="mailto:verlinorayafajri@mail.ugm.ac.id"
+            <Link
+              href="mailto:verlinofajri.work@gmail.com"
               className="lg:py-[11px] lg:px-[32px] md:py-[8px] md:px-[20px] py-[5px] px-[10px] lg:text-[16px] text-xs border rounded-full hover:bg-white hover:text-black transition-all"
             >
               Say hi 👋
-            </a>
+            </Link>
           </div>
         </div>
       </div>
