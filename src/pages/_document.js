@@ -12,6 +12,7 @@ export default function Document() {
         majoring in Software Engineering Technology and Backend Developer. I have a strong passion for 
         technology and a keen interest in staying updated with the latest 
         advancements in the field." />
+        <meta name="keywords" content="Verlino, Fajri, Portfolio, verlinofajri, verlino raya fajri, VerlinoFajri, Verlino Raya Fajri" />
       </Head>
       <body>
         <Main />
