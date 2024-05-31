@@ -7,7 +7,7 @@ import CardProject from "@/items/cardProject";
 export default function Projects() {
   return (
     <div className="font-urbanist bg-black">
-      <Navbar active={"projects"} />
+      <Navbar />
       <JumbotronProjects />
       <ProjectDisplay title="My Projects" description="Discover my skills and creativity in action, with just one click.">
         <CardProject

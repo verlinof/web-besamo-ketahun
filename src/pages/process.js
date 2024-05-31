@@ -5,7 +5,7 @@ export default function Process() {
   return (
     <>
       <div className="font-urbanist bg-black">
-        <Navbar active={"process"} />
+        <Navbar />
         <JumbotronProcess />
       </div>
     </>

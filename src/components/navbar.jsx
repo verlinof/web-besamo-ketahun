@@ -3,13 +3,16 @@ import Logo from "@/items/logo";
 import { act, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Navbar = ({ active }) => {
+const Navbar = () => {
   const [isClick, setIsClick] = useState(false);
 
   const toggleNavbar = () => {
     setIsClick(!isClick);
   };
+  const router = useRouter();
+  const active = router.asPath;
 
   return (
     <nav className="bg-black sticky top-0 z-[20] font-urbanist">
@@ -22,7 +25,7 @@ const Navbar = ({ active }) => {
               <Link
                 href="/"
                 className={`${
-                  active === "home"
+                  active === "/"
                     ? "bg-white text-black"
                     : "text-white hover:bg-white hover:text-black"
                 } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
@@ -32,7 +35,7 @@ const Navbar = ({ active }) => {
               <Link
                 href="/projects"
                 className={`${
-                  active === "projects"
+                  active === "/projects"
                     ? "bg-white text-black"
                     : "text-white hover:bg-white hover:text-black"
                 } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
@@ -40,9 +43,9 @@ const Navbar = ({ active }) => {
                 Projects
               </Link>
               <Link
-                href="/"
+                href="/process"
                 className={`${
-                  active === "process"
+                  active === "/process"
                     ? "bg-white text-black"
                     : "text-white hover:bg-white hover:text-black"
                 } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
@@ -88,7 +91,7 @@ const Navbar = ({ active }) => {
           <Link
             href="/"
             className={`${
-              active === "home"
+              active === "/"
                 ? "bg-white text-black"
                 : "text-white hover:bg-white hover:text-black"
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
@@ -98,7 +101,7 @@ const Navbar = ({ active }) => {
           <Link
             href="/projects"
             className={`${
-              active === "projects"
+              active === "/projects"
                 ? "bg-white text-black"
                 : "text-white hover:bg-white hover:text-black"
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
@@ -108,7 +111,7 @@ const Navbar = ({ active }) => {
           <Link
             href="/process"
             className={`${
-              active === "process"
+              active === "/process"
                 ? "bg-white text-black"
                 : "text-white hover:bg-white hover:text-black"
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
