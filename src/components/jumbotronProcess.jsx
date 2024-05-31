@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Cursor, Typewriter } from "react-simple-typewriter";
 
-const JumbotronProjects = () => {
+const JumbotronProcess = () => {
   const handleClick = () => {
     setInterval(() => {
-      const url = window.location.href.replace("#projects", "");
+      const url = window.location.href.replace("#process", "");
       history.replaceState({}, document.title, url);
     }, 1000);
   };
@@ -18,9 +19,20 @@ const JumbotronProjects = () => {
             data-aos-duration="1000"
             className="font-urbanist lg:text-[70px] md:text-[50px] text-[30px]"
           >
-            Showcasing my {""}
-            <span className="text-white font-bold">Talent</span> <br /> and{" "}
-            <span className="text-white font-bold">Passion</span>
+            Working{" "}
+            <span className="font-bold text-white">
+              <Typewriter
+                words={["Process", "Flow"]}
+                loop={0}
+                typeSpeed={100}
+                deleteSpeed={80}
+              />
+              <Cursor />
+            </span>
+          </p>
+          <p className="lg:text-[24px] md:text-[20px] text-[18px]">
+            How I Combine design and technology to create exceptional <br />
+            user experiences.
           </p>
           <div
             data-aos="fade-up"
@@ -29,7 +41,7 @@ const JumbotronProjects = () => {
           >
             {/* Mouse Icon */}
             <div className="animate-bounce">
-              <Link href="#projects" onClick={handleClick}>
+              <Link href="#process" onClick={handleClick}>
                 <Image
                   className="md:w-[40px] md:h-[60px] mx-auto"
                   width={20}
@@ -48,4 +60,4 @@ const JumbotronProjects = () => {
   );
 };
 
-export default JumbotronProjects;
+export default JumbotronProcess;

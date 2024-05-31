@@ -17,7 +17,7 @@ export default function Projects() {
             through this application. This application uses Firebase as the main
             database and also as Authorization."
           aos_duration="1500"
-          role="Backend"
+          role="Fullstack"
           tools="Kotlin & Firebase"
           links="https://github.com/verlinof/KuBuku"
         />
@@ -68,7 +68,7 @@ export default function Projects() {
           regular users to submit permission requests, which are then verified 
           by admins or verifiers. Registration on this REST API also requires 
           approval from admins or verifiers to be successfully registered."
-          aos_duration="3000"
+          aos_duration="1500"
           role="Backend"
           tools="Express JS & MySQL"
           links="https://github.com/verlinof/permission-backend-app"
@@ -82,8 +82,22 @@ export default function Projects() {
           architecture and migrations. This backend application also can handle File Upload"
           aos_duration="3000"
           role="Backend"
-          tools="Kotlin & Laravel"
-          links="https://github.com/verlinof/Softlancer"
+          tools="Gin Golang"
+          links="https://github.com/verlinof/restful-api-golang"
+        />
+        <CardProject
+          image="/projects/syncpos.png"
+          title="Syncpos (Syncronize Posyandu)"
+          description="
+          Syncpos is a comprehensive integration system designed to enhance communication and data management across multiple posyandus .
+          The project encompasses two robust APIs: an internal API that powers the Syncpos web application, and an external API that en ables
+          posyandus to seamlessly connect with our system. To ensure secure and efficient access, Syncpos offers API keys to posyandus,
+          facilitating their interaction with the Syncpos API. This dual-API architecture ensures smooth interoperability and optimized functionality
+          for all users."
+          aos_duration="1500"
+          role="Backend"
+          tools="Express & Laravel"
+          links="http://35.240.194.181:4000/api"
         />
       </ProjectDisplay>
       <Footer />
