@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="font-urbanist bg-black">
-      <Navbar />
+      <Navbar active="home" />
       <Jumbotron />
       <About />
       <ProjectDisplay title="Featured Projects" description="I craft digital solutions that showcase my passion and expertise in
