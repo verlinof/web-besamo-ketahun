@@ -40,7 +40,7 @@ const Navbar = ({ active }) => {
                 Projects
               </Link>
               <Link
-                href="/"
+                href="/process"
                 className={`${
                   active === "process"
                     ? "bg-white text-black"
