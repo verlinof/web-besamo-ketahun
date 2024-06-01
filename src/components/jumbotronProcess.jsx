@@ -30,9 +30,13 @@ const JumbotronProcess = () => {
               <Cursor />
             </span>
           </p>
-          <p className="lg:text-[24px] md:text-[20px] text-[18px]">
-            How I Combine design and technology to create exceptional <br />
-            user experiences.
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="lg:text-[24px] md:text-[20px] text-[18px] max-w-2xl mx-auto"
+          >
+            How I Combine design and technology to create exceptional user
+            experiences.
           </p>
           <div
             data-aos="fade-up"

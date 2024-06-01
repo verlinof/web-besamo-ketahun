@@ -55,7 +55,7 @@ const SkillScope = () => {
         <Image
           data-aos="fade-up"
           data-aos-duration="1500"
-          src={"/testing.svg"}
+          src={"/working-process.svg"}
           className={`w-full hidden md:block`}
           width={0}
           height={0}
