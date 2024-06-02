@@ -16,9 +16,9 @@ export default function Process() {
             title={"Get Started"}
             description1={"Starting with meeting to discuss about your needs."} >
             <p>
-              <span className="text-white">Why?</span>{" "}Because understanding your needs and requirements is crucial, thoroughly addressing these aspects ensures that the project's objectives are aligned with the
+              <span className="text-white">Why?</span>{" "}Because understanding your needs and requirements is crucial, thoroughly addressing these aspects ensures that the project`s objectives are aligned with the
               your expectations. This alignment not only enhances stakeholder satisfaction but also fosters trust and cooperation, ultimately contributing to the project's success.
-              Additionally, it helps in identifying potential risks early, enabling proactive management and increasing the likelihood of project success.`
+              Additionally, it helps in identifying potential risks early, enabling proactive management and increasing the likelihood of project success.
             </p>
           </WorkStep>
           <WorkStep
@@ -26,13 +26,13 @@ export default function Process() {
             title={"Planning"}
             description1={"Defining clear goals and good planning."} >
             <p>
-              <span className="text-white">At begins,</span> {" "} defining clear goals is essential: Establishing well-defined goals ensures that all team members understand the project's purpose and objectives, leading
+              <span className="text-white">At begins,</span> {" "} defining clear goals is essential: Establishing well-defined goals ensures that all team members understand the project`s purpose and objectives, leading
               to a focused and cohesive effort. This clarity not only enhances motivation and alignment but also provides measurable benchmarks for success, driving the project towards its desired outcomes.
             </p>
             <br />
             <p>
               <span className="text-white">Choosing the right tech stack is critical,</span> {" "} Selecting the appropriate technology stack ensures that the project is built on robust, scalable, and
-              maintainable foundations. This decision influences the app's performance, development speed, and future scalability, directly impacting the overall success and sustainability of the project.
+              maintainable foundations. This decision influences the app`s performance, development speed, and future scalability, directly impacting the overall success and sustainability of the project.
             </p>
             <br />
             <p>
