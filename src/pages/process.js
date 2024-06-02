@@ -17,7 +17,7 @@ export default function Process() {
             description1={"Starting with meeting to discuss about your needs."} >
             <p>
               <span className="text-white">Why?</span>{" "}Because understanding your needs and requirements is crucial, thoroughly addressing these aspects ensures that the project`s objectives are aligned with the
-              your expectations. This alignment not only enhances stakeholder satisfaction but also fosters trust and cooperation, ultimately contributing to the project's success.
+              your expectations. This alignment not only enhances stakeholder satisfaction but also fosters trust and cooperation, ultimately contributing to the project`s success.
               Additionally, it helps in identifying potential risks early, enabling proactive management and increasing the likelihood of project success.
             </p>
           </WorkStep>
