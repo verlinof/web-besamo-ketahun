@@ -85,7 +85,7 @@ export default function Process() {
               <span className="text-white">
                 By creating good diagrams and design,
               </span>{" "}
-              you ensure that the project's requirements are thoroughly
+              you ensure that the project`s requirements are thoroughly
               understood and closely aligned with the technical specifications.
               This clarity not only enhances team motivation and alignment by
               providing a shared vision, but it also sets measurable benchmarks
