@@ -9,7 +9,10 @@ export default function Projects() {
     <div className="font-urbanist bg-black">
       <Navbar active={"projects"} />
       <JumbotronProjects />
-      <ProjectDisplay title="My Projects" description="Discover my skills and creativity in action, with just one click.">
+      <ProjectDisplay
+        title="My Projects"
+        description="Discover my skills and creativity in action, with just one click."
+      >
         <CardProject
           image="/projects/kubuku.png"
           title="Kubuku"
@@ -99,8 +102,21 @@ export default function Projects() {
           tools="Express & Laravel"
           links="http://35.240.194.181:4000/api"
         />
+        <CardProject
+          image="/projects/bemkm_sv.png"
+          title="Profile BEM KM SV"
+          description="
+          The BEM KM SV web profile is designed to showcase and manage the activities and profiles of the BEM KM Sekolah Vokasi. This platform serves as a central hub
+          for all BEM KM SV events and initiatives, providing detailed information and updates. Users can access comprehensive profiles of the BEM KM SV team members,
+          view upcoming events, and stay informed about ongoing projects and activities. This streamlined approach ensures efficient communication and data management, 
+          enhancing the overall functionality and user experience of the BEM KM SV community."
+          aos_duration="3000"
+          role="Fullstack"
+          tools="Wordpress"
+          links="https://bemkm.sv.ugm.ac.id/"
+        />
       </ProjectDisplay>
       <Footer />
     </div>
   );
-};
+}
