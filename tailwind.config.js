@@ -9,15 +9,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-orange': "#D46868",
-        'card-background': '#080808',
-        'main-gray': "#484E53",
-        'secondary-gray': '#A9A9A9'
+        "main-green": "#326673",
+        "main-blue": "#58A9BD",
       },
       fontFamily: {
-        urbanist: ["Urbanist", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
-      }
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],

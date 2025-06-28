@@ -12,9 +12,9 @@ const Navbar = ({ active }) => {
   };
 
   return (
-    <nav className="bg-black sticky top-0 z-[20] font-urbanist">
+    <nav className="sticky top-0 z-[20] font-poppins bg-gray-100 shadow-md">
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <Logo />
           {/* Nav Link */}
           <div className="hidden lg:block">
@@ -23,38 +23,38 @@ const Navbar = ({ active }) => {
                 href="/"
                 className={`${
                   active === "home"
-                    ? "bg-white text-black"
-                    : "text-white hover:bg-white hover:text-black"
+                    ? "text-main-green font-semibold"
+                    : "text-main-green hover:font-semibold"
                 } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
-                Home
+                Beranda
               </Link>
               <Link
-                href="/projects"
+                href="/pariwisata"
                 className={`${
-                  active === "projects"
-                    ? "bg-white text-black"
-                    : "text-white hover:bg-white hover:text-black"
+                  active === "pariwisata"
+                    ? "text-main-green font-semibold"
+                    : "text-main-green hover:font-semibold"
                 } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
-                Projects
+                Pariwisata dan Budaya
               </Link>
               <Link
-                href="/process"
+                href="/umkm"
                 className={`${
-                  active === "process"
-                    ? "bg-white text-black"
-                    : "text-white hover:bg-white hover:text-black"
+                  active === "umkm"
+                    ? "text-main-green font-semibold"
+                    : "text-main-green hover:font-semibold"
                 } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
-                Process
+                UMKM
               </Link>
             </div>
           </div>
           {/* Responsive Toggle */}
           <div className="lg:hidden flex items-center">
             <button
-              className="inline-flex w-auto items-center justify-center p-2 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex w-auto items-center justify-center p-2 rounded-md text-main-green focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleNavbar}
             >
               {isClick ? (
@@ -80,7 +80,7 @@ const Navbar = ({ active }) => {
       </div>
       {/* Responsive Menu */}
       <div
-        className={`lg:hidden absolute top-16 w-full z-30 bg-black transition-max-height duration-1000 ease-in-out overflow-hidden ${
+        className={`lg:hidden absolute top-20 w-full z-30 bg-white transition-max-height duration-1000 ease-in-out overflow-hidden ${
           isClick ? "max-h-screen" : "max-h-0"
         }`}
       >
@@ -89,31 +89,31 @@ const Navbar = ({ active }) => {
             href="/"
             className={`${
               active === "home"
-                ? "bg-white text-black"
-                : "text-white hover:bg-white hover:text-black"
+                ? "bg-main-green text-white"
+                : "text-main-green hover:bg-main-green hover:text-white"
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
-            Home
+            Beranda
           </Link>
           <Link
-            href="/projects"
+            href="/pariwisata"
             className={`${
-              active === "projects"
-                ? "bg-white text-black"
-                : "text-white hover:bg-white hover:text-black"
+              active === "pariwisata"
+                ? "bg-main-green text-white"
+                : "text-main-green hover:bg-main-green hover:text-white"
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
-            Projects
+            Pariwisata dan Budaya
           </Link>
           <Link
-            href="/process"
+            href="/umkm"
             className={`${
-              active === "process"
-                ? "bg-white text-black"
-                : "text-white hover:bg-white hover:text-black"
+              active === "umkm"
+                ? "bg-main-green text-white"
+                : "text-main-green hover:bg-main-green hover:text-white"
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
-            Process
+            UMKM
           </Link>
         </div>
       </div>

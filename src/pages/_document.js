@@ -2,17 +2,19 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" className="bg-black scroll-smooth">
+    <Html lang="en" className="scroll-smooth">
       <Head>
-        <title>Verlino Fajri: Portofolio</title>
-        <link rel="icon" href="/web_icon.ico" />
-        <meta name="title" content="Verlino Fajri: Portofolio" />
-        <meta name="description" content="Hello, my name is Verlino Raya Fajri, 
-        and I am a student at the Vocational School of Gadjah Mada University, 
-        majoring in Software Engineering Technology and Backend Developer. I have a strong passion for 
-        technology and a keen interest in staying updated with the latest 
-        advancements in the field." />
-        <meta name="keywords" content="Verlino, Fajri, Portfolio, verlinofajri, verlino raya fajri, VerlinoFajri, Verlino Raya Fajri" />
+        <title>Besamo Ketahun</title>
+        <link rel="icon" href="/icon/LOGOKETAHUN.ico" />
+        <meta name="title" content="Besamo Ketahun" />
+        <meta
+          name="description"
+          content="Besamo Ketahun is a website dedicated to promoting the tourism and culture of Ketahun, Bengkulu. Explore local attractions, cultural heritage, and support local businesses."
+        />
+        <meta
+          name="keywords"
+          content="Ketahun, Bengkulu, tourism, culture, local businesses, UMKM, pariwisata, budaya, besamo ketahun, website pariwisata, website budaya"
+        />
       </Head>
       <body>
         <Main />
