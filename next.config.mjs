@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["images.unsplash.com"],
+    domains: [
+      "images.ctfassets.net", // Contentful images
+      "images.unsplash.com", // Unsplash images (untuk fallback)
+      "assets.ctfassets.net",
+    ],
   },
 };
 

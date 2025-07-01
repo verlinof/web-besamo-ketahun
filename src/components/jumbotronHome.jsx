@@ -20,14 +20,18 @@ const JumbotronHome = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="max-w-7xl">
           {/* Header Tag */}
-          <div className="mb-6">
+          <div className="mb-6" data-aos="fade-up" data-aos-duration="1000">
             <span className="inline-block text-white/90 text-lg font-medium tracking-wide">
               KKN-PPM UGM
             </span>
           </div>
 
           {/* Main Title */}
-          <h1 className="text-white font-bold mb-6 leading-tight">
+          <h1
+            className="text-white font-bold mb-6 leading-tight"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <span className="block text-5xl sm:text-6xl lg:text-7xl mb-2">
               Besamo Ketahun
             </span>
@@ -37,7 +41,11 @@ const JumbotronHome = () => {
           </h1>
 
           {/* Theme Card */}
-          <div className="bg-main-blue backdrop-blur-sm rounded-2xl p-6 sm:p-8 w-full shadow-2xl">
+          <div
+            className="bg-main-blue backdrop-blur-sm rounded-2xl p-6 sm:p-8 w-full shadow-2xl"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <h2 className="text-white text-xl sm:text-2xl font-bold mb-4">
               Tema Besar
             </h2>

@@ -1,7 +1,7 @@
 import { MapPin } from "lucide-react";
 import Image from "next/image";
 
-export default function Jumbotron() {
+export default function Jumbotron({ title, subtitle }) {
   return (
     <section className="relative min-h-[50vh] flex items-center justify-start overflow-hidden">
       {/* Background Image */}
@@ -23,13 +23,13 @@ export default function Jumbotron() {
           {/* Main Title */}
           <h1 className="text-white text-center font-bold mb-6 leading-tight">
             <span className="block text-3xl sm:text-4xl lg:text-5xl mb-2">
-              Pariwisata dan Budaya
+              {title}
             </span>
 
             <div className="flex items-center justify-center">
               <MapPin className="w-5 h-5 mr-2" />
               <span className="font-medium text-lg sm:text-lg lg:text-xl">
-                Kecamatan Ketahun, Kabupaten Bengkulu Utara, Provinsi Bengkulu
+                {subtitle}
               </span>
             </div>
           </h1>

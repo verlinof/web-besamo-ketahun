@@ -10,7 +10,7 @@ const client = createClient({
   environment: "master", // atau 'main' sesuai environment Anda
 });
 
-export default function PariwisataCards() {
+export default function UmkmCards() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -39,64 +39,6 @@ export default function PariwisataCards() {
       } catch (err) {
         console.error("Error fetching Contentful data:", err);
         setError(err.message);
-
-        // // Fallback ke data dummy jika gagal fetch
-        // setArticles([
-        //   {
-        //     id: 1,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
-        //     title: "Keindahan Pantai Sunset di Bengkulu Utara",
-        //     type: "Pariwisata",
-        //     desa: "Desa Urai",
-        //     createdAt: new Date("2024-06-25"),
-        //   },
-        //   {
-        //     id: 2,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop",
-        //     title: "Festival Budaya Tradisional Ketahun",
-        //     type: "Budaya",
-        //     desa: "Desa Pasar Ketahun",
-        //     createdAt: new Date("2024-06-20"),
-        //   },
-        //   {
-        //     id: 3,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop",
-        //     title: "Kuliner Khas Bengkulu yang Wajib Dicoba",
-        //     type: "Pariwisata",
-        //     desa: "Desa Urai",
-        //     createdAt: new Date("2024-06-18"),
-        //   },
-        //   {
-        //     id: 4,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
-        //     title: "Trekking di Bukit Hijau Ketahun",
-        //     type: "Pariwisata",
-        //     desa: "Desa Urai",
-        //     createdAt: new Date("2024-06-15"),
-        //   },
-        //   {
-        //     id: 5,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop",
-        //     title: "Seni Kerajinan Tangan Tradisional",
-        //     type: "Budaya",
-        //     desa: "Desa Pasar Ketahun",
-        //     createdAt: new Date("2024-06-12"),
-        //   },
-        //   {
-        //     id: 6,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=250&fit=crop",
-        //     title: "Air Terjun Tersembunyi di Hutan Ketahun",
-        //     type: "Budaya",
-        //     desa: "Desa Pasar Ketahun",
-        //     createdAt: new Date("2024-06-10"),
-        //   },
-        // ]);
       } finally {
         setLoading(false);
       }
@@ -116,10 +58,10 @@ export default function PariwisataCards() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Artikel Pariwisata & Budaya
+            Artikel UMKM
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Jelajahi Pariwisata, dan budaya khas Ketahun, Bengkulu Utara
+            UMKM di Ketahun, Bengkulu Utara
           </p>
           {error && (
             <p className="text-yellow-600 text-sm mt-2">Error: {error}</p>
@@ -132,16 +74,15 @@ export default function PariwisataCards() {
       </div>
     );
   }
-
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Artikel Pariwisata & Budaya
+          Artikel UMKM
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Jelajahi Pariwisata, dan budaya khas Ketahun, Bengkulu Utara
+          UMKM di Ketahun, Bengkulu Utara
         </p>
         {error && (
           <p className="text-yellow-600 text-sm mt-2">Error: {error}</p>
