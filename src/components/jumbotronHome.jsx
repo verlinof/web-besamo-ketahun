@@ -50,10 +50,10 @@ const JumbotronHome = () => {
               Tema Besar
             </h2>
             <p className="text-white text-base sm:text-lg leading-relaxed">
-              "KKN Tematik di Kawasan Transmigrasi di Lagita, Kec. Ketahun, Kab.
+              KKN Tematik di Kawasan Transmigrasi di Lagita, Kec. Ketahun, Kab.
               Bengkulu Utara: Pemberdayaan Masyarakat Berkelanjutan melalui
               Pengembangan Komoditas Lokal dan Digitalisasi Pariwisata Lokal di
-              Desa Urai dan Pasar Ketahun"
+              Desa Urai dan Pasar Ketahun
             </p>
           </div>
 

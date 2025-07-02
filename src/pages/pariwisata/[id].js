@@ -1,4 +1,3 @@
-// pages/pariwisata/[id].js
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { createClient } from "contentful";
