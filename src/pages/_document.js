@@ -9,11 +9,11 @@ export default function Document() {
         <meta name="title" content="Besamo Ketahun" />
         <meta
           name="description"
-          content="Besamo Ketahun is a website dedicated to promoting the tourism and culture of Ketahun, Bengkulu. Explore local attractions, cultural heritage, and support local businesses."
+          content="KKN-PPM UGM Besamo Ketahun 2025 di Desa Urai dan Pasar Ketahun, Bengkulu Utara. Fokus pada pemberdayaan masyarakat, pengembangan komoditas lokal, dan digitalisasi pariwisata."
         />
         <meta
           name="keywords"
-          content="Ketahun, Bengkulu, tourism, culture, local businesses, UMKM, pariwisata, budaya, besamo ketahun, website pariwisata, website budaya"
+          content="Ketahun, ketahun, Bengkulu, tourism, culture, UMKM, pariwisata, budaya, besamo ketahun, website pariwisata, website budaya"
         />
       </Head>
       <body>

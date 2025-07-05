@@ -13,7 +13,7 @@ const VideoProfile = () => {
   }, []);
 
   return (
-    <section className="px-4 sm:px-8 lg:px-16 py-12 lg:py-16 bg-gray-50">
+    <section className="px-4 sm:px-8 lg:px-16 py-12 lg:py-16">
       <div className="max-w-7xl mx-auto">
         {/* Title Section */}
         <div
