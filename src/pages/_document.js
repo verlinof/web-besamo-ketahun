@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en" className="scroll-smooth">
       <Head>
-        <title>Besamo Ketahun</title>
         <link rel="icon" href="/icon/LOGOKETAHUN.ico" />
         <meta name="title" content="Besamo Ketahun" />
         <meta

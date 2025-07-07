@@ -23,7 +23,7 @@ const Card = ({ id, title, banner, type, desa, createdAt }) => {
     <Link href={`/pariwisata/${id}`}>
       <div
         key={id}
-        className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-100"
+        className="bg-white h-full rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer border border-gray-100"
       >
         {/* Banner Image */}
         <div className="relative h-48 overflow-hidden">

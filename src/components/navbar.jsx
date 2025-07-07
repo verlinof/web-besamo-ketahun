@@ -40,14 +40,14 @@ const Navbar = ({ active }) => {
                 Pariwisata dan Budaya
               </Link>
               <Link
-                href="/umkm"
+                href="/program-kerja"
                 className={`${
-                  active === "umkm"
+                  active === "program kerja"
                     ? "text-main-green font-semibold"
                     : "text-main-green hover:font-semibold"
                 } rounded-lg py-2 px-6 transition duration-150 ease-in-out`}
               >
-                UMKM
+                Program Kerja
               </Link>
             </div>
           </div>
@@ -106,14 +106,14 @@ const Navbar = ({ active }) => {
             Pariwisata dan Budaya
           </Link>
           <Link
-            href="/umkm"
+            href="/program-kerja"
             className={`${
-              active === "umkm"
+              active === "program kerja"
                 ? "bg-main-green text-white"
                 : "text-main-green hover:bg-main-green hover:text-white"
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
-            UMKM
+            Program Kerja
           </Link>
         </div>
       </div>

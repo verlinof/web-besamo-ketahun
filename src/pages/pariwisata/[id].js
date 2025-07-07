@@ -198,7 +198,7 @@ export default function PariwisataDetail() {
         </div>
 
         {/* Content */}
-        <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden -mt-20 relative z-10">
             {/* Article Header */}
             <div className="p-6 md:p-8">
@@ -217,20 +217,6 @@ export default function PariwisataDetail() {
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 {article.title}
               </h1>
-
-              {/* Tags */}
-              {article.tags && article.tags.length > 0 && (
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {article.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-full"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-              )}
             </div>
 
             {/* Article Content */}

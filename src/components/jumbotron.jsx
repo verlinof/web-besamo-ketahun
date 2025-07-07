@@ -1,20 +1,20 @@
 import { MapPin } from "lucide-react";
 import Image from "next/image";
 
-export default function Jumbotron({ title, subtitle }) {
+export default function Jumbotron({ title, subtitle, image }) {
   return (
     <section className="relative min-h-[50vh] flex items-center justify-start overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/content/hero-pariwisata.png" // Ganti dengan path gambar sunset/landscape
+          src={image} // Ganti dengan path gambar sunset/landscape
           alt="Background Hero"
           fill
           className="object-cover"
           priority
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/25"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       {/* Content Container */}
