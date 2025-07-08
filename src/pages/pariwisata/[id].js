@@ -1,10 +1,60 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { createClient } from "contentful";
-import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/navbar";
+import { Calendar } from "lucide-react";
+
+// Custom render options for rich text
+const renderOptions = {
+  renderNode: {
+    [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      const { file, title } = node.data.target.fields;
+      if (!file) return null;
+
+      if (file.contentType.includes("image")) {
+        return (
+          <div className="my-4">
+            <Image
+              src={`https:${file.url}`}
+              alt={title || "Contentful asset"}
+              width={file.details?.image?.width || 800}
+              height={file.details?.image?.height || 400}
+              className="rounded-lg"
+            />
+          </div>
+        );
+      }
+      return null;
+    },
+    [BLOCKS.PARAGRAPH]: (node, children) => (
+      <p className="text-gray-700 leading-relaxed mb-4">{children}</p>
+    ),
+    [BLOCKS.HEADING_1]: (node, children) => (
+      <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4">{children}</h1>
+    ),
+    [BLOCKS.HEADING_2]: (node, children) => (
+      <h2 className="text-2xl font-semibold text-gray-900 mt-6 mb-3">
+        {children}
+      </h2>
+    ),
+    [INLINES.HYPERLINK]: (node, children) => (
+      <a
+        href={node.data.uri}
+        className="text-blue-600 hover:underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children}
+      </a>
+    ),
+  },
+  renderText: (text) =>
+    text.split("\n").flatMap((text, i) => [i > 0 && <br key={i} />, text]),
+};
 
 export default function PariwisataDetail() {
   const router = useRouter();
@@ -12,75 +62,23 @@ export default function PariwisataDetail() {
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [client, setClient] = useState(null);
 
   // Initialize Contentful client
   useEffect(() => {
-    const initializeClient = () => {
-      const token = process.env.NEXT_PUBLIC_CONTENTFUL_API_KEY;
-
-      if (token) {
-        const contentfulClient = createClient({
-          space: "qw435lrccd02",
-          accessToken: token,
-          environment: "master",
-        });
-        setClient(contentfulClient);
-      } else {
-        console.error("Contentful API token not found");
-        setError("Konfigurasi API tidak ditemukan");
-        setLoading(false);
-      }
-    };
-
-    initializeClient();
-  }, []);
-
-  // Fetch article detail
-  useEffect(() => {
-    if (!client || !id) return;
+    const client = createClient({
+      space: "qw435lrccd02",
+      accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_API_KEY,
+      environment: "master",
+    });
 
     async function fetchArticleDetail() {
+      if (!id) return;
+
       try {
-        // Fetch entry dengan include untuk mendapatkan referenced assets
-        const entry = await client.getEntry(id, {
-          include: 2, // Include referenced entries/assets
-        });
+        const entry = await client.getEntry(id, { include: 2 });
 
         if (entry.sys.contentType.sys.id !== "pariwisataBudaya") {
           throw new Error("Content type tidak sesuai");
-        }
-
-        // Process content berdasarkan tipe field
-        let processedContent = "";
-
-        if (entry.fields.content) {
-          // Jika content adalah Rich Text
-          if (entry.fields.content.nodeType) {
-            try {
-              processedContent = documentToHtmlString(entry.fields.content);
-            } catch (richTextError) {
-              processedContent =
-                entry.fields.content.content?.[0]?.content?.[0]?.value || "";
-            }
-          }
-          // Jika content adalah plain text
-          else if (typeof entry.fields.content === "string") {
-            processedContent = entry.fields.content;
-          }
-          // Jika content adalah object lain
-          else {
-            console.log("Content structure:", entry.fields.content);
-            processedContent = JSON.stringify(entry.fields.content, null, 2);
-          }
-        }
-        // Fallback ke description jika content tidak ada
-        else if (entry.fields.description) {
-          if (typeof entry.fields.description === "string") {
-            processedContent = entry.fields.description;
-          } else {
-            processedContent = documentToHtmlString(entry.fields.description);
-          }
         }
 
         const articleData = {
@@ -92,9 +90,7 @@ export default function PariwisataDetail() {
           updatedAt: new Date(entry.sys.updatedAt),
           banner: entry.fields.banner
             ? {
-                url: entry.fields.banner.fields?.file?.url
-                  ? `https:${entry.fields.banner.fields.file.url}`
-                  : null,
+                url: `https:${entry.fields.banner.fields?.file?.url}`,
                 alt:
                   entry.fields.banner.fields?.title ||
                   entry.fields.title ||
@@ -104,25 +100,21 @@ export default function PariwisataDetail() {
                   entry.fields.banner.fields?.file?.details?.image?.height,
               }
             : null,
-          content: processedContent,
+          content: entry.fields.content,
         };
 
         setArticle(articleData);
       } catch (err) {
         console.error("Error fetching article:", err);
         setError(`Error: ${err.message}`);
-
-        // Redirect ke /pariwisata jika tidak ditemukan
-        setTimeout(() => {
-          router.push("/pariwisata");
-        }, 3000);
+        setTimeout(() => router.push("/pariwisata"), 3000);
       } finally {
         setLoading(false);
       }
     }
 
     fetchArticleDetail();
-  }, [client, id, router]);
+  }, [id, router]);
 
   const getTypeColor = (type) => {
     const colors = {
@@ -132,7 +124,6 @@ export default function PariwisataDetail() {
     return colors[type] || "bg-gray-100 text-gray-800";
   };
 
-  // Loading state
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -144,7 +135,6 @@ export default function PariwisataDetail() {
     );
   }
 
-  // Error state
   if (error) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -168,7 +158,6 @@ export default function PariwisataDetail() {
     );
   }
 
-  // Article content
   if (!article) return null;
 
   const formatDate = (date) => {
@@ -183,7 +172,6 @@ export default function PariwisataDetail() {
     <>
       <Navbar />
       <div className="min-h-screen bg-gray-50">
-        {/* Header/Banner */}
         <div className="relative h-96 md:h-96 bg-gradient-to-b from-blue-600 to-purple-600">
           {article.banner?.url && (
             <Image
@@ -197,10 +185,8 @@ export default function PariwisataDetail() {
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
 
-        {/* Content */}
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden -mt-20 relative z-10">
-            {/* Article Header */}
             <div className="p-6 md:p-8">
               <div className="flex flex-wrap items-center gap-4 mb-4">
                 <span
@@ -211,7 +197,14 @@ export default function PariwisataDetail() {
                 >
                   {article.type}
                 </span>
-                <span className="text-gray-600 text-md">📍 {article.desa}</span>
+                <span className="text-gray-600 text-lg">📍{article.desa}</span>
+                {/* Date */}
+                <div className="flex items-center text-gray-500">
+                  <Calendar className="w-4 h-4 mr-2 flex-shrink-0" />
+                  <span className="text-lg">
+                    {formatDate(article.createdAt)}
+                  </span>
+                </div>
               </div>
 
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -219,16 +212,10 @@ export default function PariwisataDetail() {
               </h1>
             </div>
 
-            {/* Article Content */}
             <div className="px-6 md:px-8 pb-8">
               <div className="prose prose-lg max-w-none text-xl">
                 {article.content ? (
-                  <div
-                    className="text-gray-700 leading-relaxed"
-                    dangerouslySetInnerHTML={{
-                      __html: article.content,
-                    }}
-                  />
+                  documentToReactComponents(article.content, renderOptions)
                 ) : (
                   <div className="text-center py-12">
                     <div className="text-6xl mb-4">📝</div>

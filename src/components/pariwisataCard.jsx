@@ -39,64 +39,6 @@ export default function PariwisataCards() {
       } catch (err) {
         console.error("Error fetching Contentful data:", err);
         setError(err.message);
-
-        // // Fallback ke data dummy jika gagal fetch
-        // setArticles([
-        //   {
-        //     id: 1,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
-        //     title: "Keindahan Pantai Sunset di Bengkulu Utara",
-        //     type: "Pariwisata",
-        //     desa: "Desa Urai",
-        //     createdAt: new Date("2024-06-25"),
-        //   },
-        //   {
-        //     id: 2,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop",
-        //     title: "Festival Budaya Tradisional Ketahun",
-        //     type: "Budaya",
-        //     desa: "Desa Pasar Ketahun",
-        //     createdAt: new Date("2024-06-20"),
-        //   },
-        //   {
-        //     id: 3,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop",
-        //     title: "Kuliner Khas Bengkulu yang Wajib Dicoba",
-        //     type: "Pariwisata",
-        //     desa: "Desa Urai",
-        //     createdAt: new Date("2024-06-18"),
-        //   },
-        //   {
-        //     id: 4,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
-        //     title: "Trekking di Bukit Hijau Ketahun",
-        //     type: "Pariwisata",
-        //     desa: "Desa Urai",
-        //     createdAt: new Date("2024-06-15"),
-        //   },
-        //   {
-        //     id: 5,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop",
-        //     title: "Seni Kerajinan Tangan Tradisional",
-        //     type: "Budaya",
-        //     desa: "Desa Pasar Ketahun",
-        //     createdAt: new Date("2024-06-12"),
-        //   },
-        //   {
-        //     id: 6,
-        //     banner:
-        //       "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=250&fit=crop",
-        //     title: "Air Terjun Tersembunyi di Hutan Ketahun",
-        //     type: "Budaya",
-        //     desa: "Desa Pasar Ketahun",
-        //     createdAt: new Date("2024-06-10"),
-        //   },
-        // ]);
       } finally {
         setLoading(false);
       }
