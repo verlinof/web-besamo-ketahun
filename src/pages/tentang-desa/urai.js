@@ -7,27 +7,27 @@ export default function TentangDesa() {
   const [selectedTab, setSelectedTab] = useState("profil");
 
   const profileData = [
-    { label: "Nama Desa", value: "Pasar Ketahun" },
+    { label: "Nama Desa", value: "Urai" },
     { label: "Kecamatan", value: "Ketahun" },
     { label: "Kabupaten", value: "Bengkulu Utara" },
     { label: "Provinsi", value: "Bengkulu" },
-    { label: "Kode Pos", value: "38561" },
-    { label: "Luas Wilayah", value: "± 25,5 km²" },
-    { label: "Ketinggian", value: "150-300 mdpl" },
+    { label: "Kode Pos", value: "38361" },
+    { label: "Luas Wilayah", value: "± 9,48 km²" },
+    { label: "Ketinggian", value: "0-150 mdpl" },
   ];
 
   const demographyData = [
-    { label: "Jumlah Penduduk", value: "±3.250 jiwa" },
-    { label: "Jumlah KK", value: "±850 KK" },
-    { label: "Jumlah Dusun", value: "5 Dusun" },
-    { label: "Mata Pencaharian", value: "Petani, Pekebun" },
+    { label: "Jumlah Penduduk", value: "±1.696 jiwa" },
+    { label: "Jumlah Dusun", value: "3 Dusun" },
+    { label: "Jumlah KK", value: "658 KK" },
+    { label: "Mata Pencaharian", value: "Pertanian, Perkebunan, Perikanan" },
   ];
 
   const statsData = [
-    { number: "3.250", label: "Jumlah Penduduk" },
-    { number: "850", label: "Kepala Keluarga" },
-    { number: "5", label: "Dusun" },
-    { number: "25.5", label: "Luas Wilayah (km²)" },
+    { number: "1770", label: "Jumlah Penduduk" },
+    { number: "3", label: "Dusun" },
+    { number: "658", label: "Jumlah Kartu Keluarga" },
+    { number: "9.48", label: "Luas Wilayah (km²)" },
   ];
 
   const tabs = [
@@ -59,25 +59,34 @@ export default function TentangDesa() {
                     </h2>
                     <div className="space-y-5 text-gray-700 leading-relaxed">
                       <p className="text-justify">
-                        Desa Ketahun merupakan salah satu desa yang terletak di
-                        Kecamatan Ketahun, Kabupaten Bengkulu Utara, Provinsi
-                        Bengkulu. Desa ini dikenal dengan keindahan alamnya yang
-                        masih asri dan kehidupan masyarakat yang masih
-                        menjunjung tinggi nilai-nilai tradisional.
+                        Desa Urai, terletak di Kecamatan Ketahun, Kabupaten
+                        Bengkulu Utara, Provinsi Bengkulu, dikenal akan
+                        keindahan alamnya yang masih alami. Salah satu daya
+                        tarik utamanya adalah pantai Urai Paradise, destinasi
+                        wisata yang populer sejak dibuka pada awal 2023. Dengan
+                        biaya masuk yang terjangkau, pengunjung dapat menikmati
+                        pemandangan pantai yang memukau. Akses ke desa ini mudah
+                        melalui Jalan Lintas Barat Sumatera dengan rute
+                        Bengkulu-Lais-Urai-Ketahun, menjadikannya tujuan yang
+                        menarik bagi wisatawan.
                       </p>
                       <p className="text-justify">
-                        Wilayah desa ini didominasi oleh perkebunan dan
-                        persawahan yang menjadi mata pencaharian utama
-                        masyarakat. Selain itu, desa ini juga memiliki potensi
-                        wisata alam yang dapat dikembangkan untuk meningkatkan
-                        kesejahteraan masyarakat.
+                        Masyarakat Desa Urai dikenal ramah dan sangat menjaga
+                        nilai-nilai tradisional. Mereka sering mengadakan acara
+                        sosial dan budaya, seperti perayaan adat dan kegiatan
+                        kemasyarakatan, yang memperkuat semangat gotong royong.
+                        Tradisi lokal yang masih terjaga menambah daya tarik
+                        desa ini sebagai tempat yang kaya akan budaya dan
+                        kebersamaan.
                       </p>
                       <p className="text-justify">
-                        Masyarakat Desa Ketahun sangat ramah dan gotong royong
-                        dalam menjalankan berbagai kegiatan kemasyarakatan.
-                        Tradisi dan budaya lokal masih terjaga dengan baik,
-                        menjadikan desa ini memiliki karakteristik yang unik dan
-                        menarik.
+                        Mata pencaharian utama penduduk Desa Urai adalah
+                        pertanian dan perikanan, yang menjadi tulang punggung
+                        ekonomi lokal. Lahan pertanian dan aktivitas perikanan
+                        mendominasi wilayah ini, mendukung kesejahteraan
+                        masyarakat. Selain itu, potensi wisata seperti Urai
+                        Paradise terus dikembangkan untuk meningkatkan
+                        perekonomian.
                       </p>
                     </div>
                   </div>

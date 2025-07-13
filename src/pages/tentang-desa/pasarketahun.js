@@ -13,13 +13,13 @@ export default function TentangDesa() {
     { label: "Provinsi", value: "Bengkulu" },
     { label: "Kode Pos", value: "38361" },
     { label: "Luas Wilayah", value: "± 34.50 km²" },
-    { label: "Ketinggian", value: "150 mdpl" },
+    { label: "Ketinggian", value: "0-150 mdpl" },
   ];
 
   const demographyData = [
     { label: "Jumlah Penduduk", value: "±3.190 jiwa" },
-    { label: "Jumlah KK", value: "±850 KK" },
-    { label: "Jumlah Dusun", value: "3 Dusun" },
+    { label: "Jumlah KK", value: "±1.172 KK" },
+    { label: "Jumlah Dusun", value: "4 Dusun" },
     {
       label: "Mata Pencaharian",
       value: "Petani, Pegawai, Nelayan, dan Pelaku Usaha",
@@ -28,8 +28,8 @@ export default function TentangDesa() {
 
   const statsData = [
     { number: "3.190", label: "Jumlah Penduduk" },
-    { number: "850", label: "Kepala Keluarga" },
-    { number: "3", label: "Dusun" },
+    { number: "1.172", label: "Kepala Keluarga" },
+    { number: "4", label: "Dusun" },
     { number: "34.50", label: "Luas Wilayah (km²)" },
   ];
 
@@ -62,25 +62,31 @@ export default function TentangDesa() {
                     </h2>
                     <div className="space-y-5 text-gray-700 leading-relaxed">
                       <p className="text-justify">
-                        Desa Ketahun merupakan salah satu desa yang terletak di
-                        Kecamatan Ketahun, Kabupaten Bengkulu Utara, Provinsi
-                        Bengkulu. Desa ini dikenal dengan keindahan alamnya yang
-                        masih asri dan kehidupan masyarakat yang masih
-                        menjunjung tinggi nilai-nilai tradisional.
+                        Desa Pasar Ketahun merupakan salah satu dari sekian
+                        banyak district di Kecamatan Ketahun,Kabupaten Bengkulu
+                        Utara, Provinsi. Desa ini terletak di pesisir pantai dan
+                        diapit oleh Sungai Ketahun yang bermuara langsung ke
+                        Samudera Hindia.
                       </p>
                       <p className="text-justify">
-                        Wilayah desa ini didominasi oleh perkebunan dan
-                        persawahan yang menjadi mata pencaharian utama
-                        masyarakat. Selain itu, desa ini juga memiliki potensi
-                        wisata alam yang dapat dikembangkan untuk meningkatkan
-                        kesejahteraan masyarakat.
+                        Sebagian besar wilayah desa ini dilintasi oleh jalur
+                        antar kabupaten dan provinsi yaitu Trans-Sumatra yang
+                        membentang hingga ratusan kilometer. Hal ini menjadikan
+                        Desa Pasar Ketahun tempat yang cukup strategis sebagai
+                        pusat aktivitas sosial-ekonomi masyarakat Ketahun.
+                        Selain itu, mata pencaharian utama masyarakat Desa Pasar
+                        Ketahun didominasi oleh pegawai, UMKM dan nelayan.
                       </p>
                       <p className="text-justify">
-                        Masyarakat Desa Ketahun sangat ramah dan gotong royong
-                        dalam menjalankan berbagai kegiatan kemasyarakatan.
-                        Tradisi dan budaya lokal masih terjaga dengan baik,
-                        menjadikan desa ini memiliki karakteristik yang unik dan
-                        menarik.
+                        Masyarakat Desa Pasar Ketahun dikenal sebagai pribadi
+                        yang ramah dan menjunjung tinggi nilai-nilai
+                        kekeluargaan. Suasana gotong royong masih sangat terasa,
+                        terutama dalam kegiatan-kegiatan komunal atau acara
+                        adat. Kehidupan beragama berjalan harmonis, dengan
+                        masjid dan mushola menjadi pusat kegiatan spiritual
+                        masyarakat. Meskipun modernisasi mulai menyentuh,
+                        tradisi dan kearifan lokal, namun tetap terjaga dengan
+                        menciptakan sebuah komunitas yang kuat dan guyub.
                       </p>
                     </div>
                   </div>
