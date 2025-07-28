@@ -41,7 +41,7 @@ const VideoProfile = () => {
               <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <iframe
                   className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/o3CBbsb6l4M?si=p2CxRQ0ZQqsP69th"
+                  src="https://www.youtube.com/embed/5m81drcLUos?si=2-tJnDMNeBpUX1kL"
                   title="Video Profil Desa Pasar Ketahun"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -70,10 +70,10 @@ const VideoProfile = () => {
         </div>
 
         {/* Video Section 2 - Desa Urai */}
-        <div className="mb-8">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-            {/* Title Card */}
-            <div
+        {/* <div className="mb-8">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12"> */}
+        {/* Title Card */}
+        {/* <div
               className="w-full lg:w-1/3 order-1"
               data-aos="fade-right"
               data-aos-delay="400"
@@ -86,10 +86,10 @@ const VideoProfile = () => {
                   Profil Desa
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            {/* Video */}
-            <div
+        {/* Video */}
+        {/* <div
               className="w-full lg:w-2/3 order-2"
               data-aos="fade-left"
               data-aos-delay="300"
@@ -105,9 +105,9 @@ const VideoProfile = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> */}
+        {/* </div> */}
+        {/* </div> */}
 
         {/* Additional Info */}
         <div
